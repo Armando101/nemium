@@ -1,15 +1,55 @@
-
-:root { 
-  --white: #ffffff; 
-  --grey: #808080; 
-  --black: #000000; 
- 
+:root {
+  --white: #ffffff;
+  --grey: #808080;
+  --black: #000000;
 }
 
 body {
-  color: var(--white);
-  background-color: var(--black);
+  font-family: "Rubik", sans-serif;
+  margin: 0;
 }
 
+.hero {
+  background-image: linear-gradient(
+    274.51deg,
+    rgba(74, 0, 224, 0.6) 5%,
+    rgba(142, 45, 226, 0.5) 130.61%
+  );
+  block-size: 96px;
+}
 
+header details summary {
+  font-weight: 700;
+}
 
+ol {
+  padding-left: 0;
+}
+
+ol li {
+  padding: 8px;
+}
+
+ol li {
+  counter-increment: menu-header;
+}
+
+ol li::before {
+  content: counter(menu-header, decimal) ". ";
+}
+
+ol li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ol li:hover {
+  background: #5551ff;
+}
+ol li:hover a {
+  color: white;
+}
+
+ol li:hover:before {
+  color: white;
+}
