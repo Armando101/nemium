@@ -72,7 +72,7 @@ ol li:hover:before {
   margin-block-end: 16px;
 }
 
-.content-main p {
+.content-main > p {
   line-height: 24px;
   color: #545454;
   margin-block-end: 40px;
@@ -108,4 +108,16 @@ ol li:hover:before {
 
 .section-content img {
   margin-block-start: 40px;
+}
+
+blockquote {
+  padding-inline-start: 20px;
+  border-left: 4px solid #5551ff;
+  margin-block-end: 40px;
+}
+
+blockquote p {
+  line-height: 32px;
+  font-weight: 400;
+  text-align: start;
 }
