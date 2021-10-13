@@ -79,9 +79,14 @@ header details > ol li:hover:before {
   margin-block-end: 40px;
 }
 
-.content-main hr {
+hr {
   border: 1px solid rgba(97, 97, 97, 0.2);
   margin-block: 40px;
+  display: block;
+}
+
+.section-content + hr {
+  display: none;
 }
 
 .section-content h2 {
@@ -116,6 +121,7 @@ blockquote {
   padding-inline-start: 20px;
   border-left: 4px solid #5551ff;
   margin-block-end: 40px;
+  margin-block-start: 40px;
 }
 
 blockquote p {
@@ -223,4 +229,21 @@ pre {
   color: white;
   border-radius: 8px;
   margin-block-end: 40px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #000000;
+  height: 174px;
+}
+
+footer h3 {
+  color: white;
+  text-align: center;
+  padding-block-start: 48px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.13px;
+  font-family: "Roboto";
 }
