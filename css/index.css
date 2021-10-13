@@ -24,6 +24,7 @@ header details summary {
 
 ol {
   padding-left: 0;
+  list-style: none;
 }
 
 ol li {
@@ -52,4 +53,59 @@ ol li:hover a {
 
 ol li:hover:before {
   color: white;
+}
+
+.content {
+  text-align: center;
+}
+
+.content-main,
+.header-content {
+  padding-inline: 16px;
+}
+
+.content-main h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33.18px;
+  margin-block-start: 40px;
+  margin-block-end: 16px;
+}
+
+.content-main p {
+  line-height: 24px;
+  color: #545454;
+  margin-block-end: 40px;
+}
+
+.content-main hr {
+  border: 1px solid rgba(97, 97, 97, 0.2);
+  margin-block: 40px;
+}
+
+.section-content h2 {
+  font-size: 32px;
+  line-height: 37.92px;
+  font-weight: 400;
+  margin-block-end: 40px;
+}
+
+.section-content h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26.07px;
+  counter-increment: content;
+}
+
+.section-content h3::before {
+  content: counter(content, decimal) ". ";
+}
+
+.section-content p {
+  color: #545454;
+  line-height: 24px;
+}
+
+.section-content img {
+  margin-block-start: 40px;
 }
