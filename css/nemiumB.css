@@ -1,36 +1,14 @@
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-regular.otf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-italic.otf");
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-bold-italic.otf");
-  font-style: italic;
-  font-weight: bold;
-}
 :root {
   font-size: 18px;
   --white30: white;
   --white20: #a5a3a5;
   --white10: #3a3539;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: #251f24;
@@ -60,6 +38,10 @@ header a {
 
 header a:hover {
   color: var(--white30);
+}
+
+header details summary {
+  font-weight: 700;
 }
 
 .header-content {

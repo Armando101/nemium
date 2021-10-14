@@ -4,6 +4,11 @@
   --white20: #b8c1ec;
   --white10: #232946;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #232946;
@@ -29,6 +34,10 @@ header li {
 header a {
   color: var(--white20);
   text-decoration: none;
+}
+
+header details summary {
+  font-weight: 700;
 }
 
 header a:hover {

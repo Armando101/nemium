@@ -1,36 +1,14 @@
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-regular.otf");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-italic.otf");
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-bold.otf");
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: charter;
-  src: url("../../assets/fonts/charter-bold-italic.otf");
-  font-style: italic;
-  font-weight: bold;
-}
 :root {
   font-size: 18px;
   --white30: #212121;
   --white20: #212429;
   --white10: #616161;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: white;
@@ -56,6 +34,10 @@ header li {
 header a {
   color: var(--white20);
   text-decoration: none;
+}
+
+header details summary {
+  font-weight: 700;
 }
 
 header a:hover {
@@ -153,10 +135,22 @@ h3 {
 
 .section-content h3 {
   counter-increment: titleList;
+  position: relative;
 }
 
 .section-content h3::before {
   content: counter(titleList, decimal) ". ";
+}
+
+.section-content h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: #000000;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .section-content img {
@@ -198,7 +192,7 @@ blockquote span::before {
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background-color: white;
+  background-color: var(--white10);
   border-radius: 50%;
 }
 
