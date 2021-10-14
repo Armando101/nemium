@@ -60,6 +60,19 @@ header details > ol li:hover:before {
   color: white;
 }
 
+.project-variant ol li::before {
+  content: "";
+}
+
+.project-variant ol li a {
+  color: #616161;
+}
+
+.project-variant ol li:hover {
+  background-color: #000000;
+  border-radius: 4px;
+}
+
 .wrapper-content {
   max-inline-size: 902px;
   margin: auto;
