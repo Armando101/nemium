@@ -257,6 +257,15 @@ footer h3 {
   font-family: "Roboto";
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  margin-inline-end: 22px;
+}
+
 @media screen and (min-width: 1366px) {
   .hero {
     block-size: 350px;
@@ -276,7 +285,7 @@ footer h3 {
   header {
     position: absolute;
     inset-block-start: 0;
-    inset-inline-end: 100px;
+    inset-inline-end: 38px;
     inline-size: 188px;
   }
   .content-main h1 {
