@@ -72,6 +72,7 @@ pre {
   padding: 40px;
   line-height: 24px;
   font-family: "Roboto";
+  overflow: auto;
 }
 
 /* .section-content h3::after {
