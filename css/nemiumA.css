@@ -27,13 +27,13 @@
 }
 :root {
   font-size: 18px;
-  --white30: white;
-  --white20: #a5a3a5;
-  --white10: #3a3539;
+  --white30: #212121;
+  --white20: #212429;
+  --white10: #616161;
 }
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #251f24;
+  background-color: white;
   color: var(--white30);
   margin: 0;
 }
@@ -86,12 +86,22 @@ p {
 }
 
 pre {
-  background-color: var(--white10);
+  background-color: #fec62e;
   padding: 40px;
-  overflow: auto;
-  border-radius: 8px;
-  margin-block-end: 40px;
+  line-height: 24px;
+  font-family: "Roboto";
 }
+
+/* .section-content h3::after {
+  content: "";
+  width: 32px;
+  height: 4px;
+  background: var(--white30);
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
 
 h1,
 h2,
@@ -114,8 +124,13 @@ h3 {
 }
 
 .hero {
-  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  block-size: 50px;
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent 60%
+    ),
+    url(../images/pattern2.png);
+  height: 350px;
 }
 
 .main hr {
@@ -123,12 +138,8 @@ h3 {
 }
 
 .wrapper {
-  max-inline-size: 902px; /* En lugar de width utilizamos este atributo para valores lógicos */
+  max-inline-size: 902px;
   margin: auto;
-
-  /* Para dar valor de alto a elementos de bloque usamos block-size
-  block-size: 100px;
-  overflow: auto; */
 }
 
 .main .content {
@@ -153,25 +164,20 @@ h3 {
 }
 
 blockquote {
-  margin-block-start: 80px;
-  margin-block-end: 63px;
-  border-radius: 8px;
-
-  padding-inline-end: 24px;
-  padding-inline-start: 24px;
-  padding-block-start: 24px;
-  padding-block-end: 24px;
-
-  line-height: 32px;
-  font-size: 24px;
-
-  background-color: var(--white10);
+  margin: 32px 0 64px;
+  padding-left: 16px;
+  line-height: 24px;
+  font-family: "Roboto";
+  border-left: 4px solid var(--white10);
 }
 
-blockquote p {
-  color: var(--white30);
+blockquote span {
+  color: var(--white10);
 }
 
+blockquote span::before {
+  content: "-";
+}
 .slider-container {
   display: block;
   overflow: auto;
@@ -204,9 +210,9 @@ blockquote p {
 .form-button-submit {
   box-sizing: border-box;
   inline-size: 100%;
-  background-color: #251f25;
+  background-color: white;
   border: 1px solid var(--white20);
-  border-radius: 8px;
+  border-radius: 90px;
   padding-inline: 16px;
   padding-block: 12px;
   color: var(--white30);
@@ -217,7 +223,8 @@ blockquote p {
 
 .form-button-submit {
   cursor: pointer;
-  background-color: #157efb;
+  background-color: #000000;
+  color: white;
   border: none;
 }
 
@@ -226,12 +233,12 @@ blockquote p {
 }
 
 footer {
-  background-color: white;
+  background-color: #212429;
   height: 174px;
 }
 
 footer h3 {
-  color: #000000;
+  color: white;
   text-align: center;
   padding-block-start: 48px;
   font-weight: 400;
@@ -245,6 +252,7 @@ footer h3 {
   display: flex;
   justify-content: center;
 }
+
 @media screen and (min-width: 1366px) {
   .hero {
     block-size: 350px;

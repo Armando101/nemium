@@ -152,6 +152,10 @@ blockquote p {
   text-align: start;
 }
 
+blockquote span::before {
+  content: "-";
+}
+
 pre {
   text-align: start;
   overflow: scroll;
